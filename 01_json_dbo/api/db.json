@@ -1,5 +1,11 @@
 {
-  "users": [],
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$Xjpz7KsMmmXyJIVDm1286ulycSbZSiVBbxhAtY0JCaxZGmirxEK0m",
+      "id": 1
+    }
+  ],
   "students": [
     {
       "id": 1,
@@ -59,6 +65,15 @@
       "date": "01-02-2021",
       "total_pages": "50",
       "id": 14
+    }
+  ],
+  "customers": [
+    {
+      "name": "test1",
+      "lastName": "test1",
+      "age": "80",
+      "email": "test@tes.com",
+      "id": 1
     }
   ]
 }

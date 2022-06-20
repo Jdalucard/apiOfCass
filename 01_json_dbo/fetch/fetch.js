@@ -13,7 +13,7 @@ const createBook = () => {
             url, {
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'Beare sdasdasdasdasdfsfdgbfdgsdfg'
+                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9saXZpZXJAbWFpbC5jb20iLCJpYXQiOjE2NTUzNDI4OTYsImV4cCI6MTY1NTM0NjQ5Niwic3ViIjoiMSJ9.wK1t8OiS8G3tERcFyoqV1y1grAcFaLAyISqQu43bBWA'
             },
             method: 'POST',
             body: JSON.stringify(newBook)
@@ -28,7 +28,10 @@ const readBooks = () => {
     const books = async () => {
         const resp = await fetch(
             url, {
-            method: 'GET'
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im9saXZpZXJAbWFpbC5jb20iLCJpYXQiOjE2NTUzNDI4OTYsImV4cCI6MTY1NTM0NjQ5Niwic3ViIjoiMSJ9.wK1t8OiS8G3tERcFyoqV1y1grAcFaLAyISqQu43bBWA'
+            },
         });
         const books = await resp.json();
         console.log(books);
